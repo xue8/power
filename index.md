@@ -1,5 +1,8 @@
 [TOC]
+    
 @[TOC]
+
+* TOC {:toc}
 
 ## Welcome to GitHub Pages
 
