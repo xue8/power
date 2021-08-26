@@ -17,3 +17,11 @@
 - [golang/mock](https://github.com/golang/mock)：mock 框架（用于 interface mock）
 - [smartystreets/goconvey](https://github.com/smartystreets/goconvey)：测试用例管理工具
 - [prashantv/gostub](https://github.com/prashantv/gostub)：变量、过程、函数打桩
+
+## 日志
+- [grafana/loki](https://github.com/grafana/loki)：是一个水平可扩展，高可用性，多租户的日志聚合系统。它的设计非常经济高效且易于操作，因为它不会为日志内容编制索引，而是为每个日志流编制一组标签
+- ELK
+- EFK
+
+## 监控
+
