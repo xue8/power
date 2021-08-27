@@ -38,3 +38,7 @@
 
 #### 互联网
 - [TooBigData](https://toobigdata.com/)：网红数据库
+
+## 微信行业解决方案
+### 微信公众号
+- [微擎](https://www.w7.cc/)：微信公众号管理系统
