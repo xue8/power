@@ -29,3 +29,9 @@
 ## 云原生
 ### 开发环境
 - [gitpod-io/gitpod](https://github.com/gitpod-io/gitpod)：Gitpod是一个基于Chorom Cloud平台的在线IDE，它可以快速的启动一个基于大多数流行语言的开发环境，并且可以很顺畅的进行开发
+
+
+## 业务洞察
+### 行业数据
+- [发现报告](https://www.fxbaogao.com/?stop=1)：行业分析报告平台
+- [topklout](http://www.topklout.com/#/home)：专业的行业分析服务商
