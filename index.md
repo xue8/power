@@ -18,13 +18,30 @@
 - [smartystreets/goconvey](https://github.com/smartystreets/goconvey)：测试用例管理工具
 - [prashantv/gostub](https://github.com/prashantv/gostub)：变量、过程、函数打桩
 
-## 日志
+
+## 可观测性
+一个好的观察系统最后要做到的形态:终态就是实现Metrics、Tracing、Logging的融合。
+这三者在可观察性上缺一不可,基于Metrics的告警发现异常，通过Tracing定位问题(可疑)模块，根据模块具体的Logging定位到错误根源，最后再基于这次问题调查经验调整Metrics(增加或者调整报警阈值等)以便下次可以更早发现/预防此类问题。
+
+### 协议
+- [OpenTelemetry](https://opentelemetry.io/)：OpenTelemetry的终态就是实现Metrics、Tracing、Logging的融合，作为CNCF可观察性的终极解决方案。
+
+
+### tracing
+提供了一个请求从接收到处理完毕整个生命周期的跟踪路径，通常请求都是在分布式的系统中处理，所以也叫做分布式链路追踪。
+
+
+### metric
+提供量化的系统内/外部各个维度的指标，一般包括Counter、Gauge、Histogram等。
+
+- [prometheus/prometheus](https://github.com/prometheus/prometheus)
+
+### log
+提供系统/进程最精细化的信息，例如某个关键变量、事件、访问记录等。
+
 - [grafana/loki](https://github.com/grafana/loki)：是一个水平可扩展，高可用性，多租户的日志聚合系统。它的设计非常经济高效且易于操作，因为它不会为日志内容编制索引，而是为每个日志流编制一组标签
 - ELK
 - EFK
-
-## 监控
-- [prometheus/prometheus](https://github.com/prometheus/prometheus)
 
 ## 云原生
 ### 开发环境
@@ -32,6 +49,9 @@
 
 ## 模板引擎
 - [jinja2](http://docs.jinkan.org/docs/jinja2/)：功能强大的模板引擎
+
+## 翻译工具
+- [DeepL](https://www.deepl.com/translator)：翻译能力比 Google 强大
 
 ## 业务洞察
 ### 行业数据
