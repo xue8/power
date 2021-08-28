@@ -61,6 +61,7 @@
 #### 互联网
 - [TooBigData](https://toobigdata.com/)：网红数据库
 - [5118](https://www.5118.com/)：营销大数据 - 智能原创改写,长尾词挖掘,营销情报,站长工具
+- [生财有术](https://www.shengcaiyoushu.com/)：一个谈钱不伤感情的社群 
 
 ## 微信行业解决方案
 ### 微信公众号
