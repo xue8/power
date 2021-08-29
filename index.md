@@ -70,5 +70,5 @@
 
 ## 音视频工具
 ### 视屏
-- [Open Broadcaster Software | OBS](https://obsproject.com/)：好用的推流、录屏软件
+- [Open Broadcaster Software-OBS](https://obsproject.com/)：好用的推流、录屏软件
 - [Final Cut Pro](https://www.apple.com/final-cut-pro/)：专业的视频剪辑软件
