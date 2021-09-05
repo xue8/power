@@ -48,7 +48,7 @@
 - [gitpod-io/gitpod](https://github.com/gitpod-io/gitpod)：Gitpod 是一个基于 Chorom Cloud 平台的在线 IDE，它可以快速的启动一个基于大多数流行语言的开发环境，并且可以很顺畅的进行开发
 - [OAM](https://oam.dev/)：开放应用模型定义（ Open Application Model Specification），为构建于云原生之上的应用构建了一套规范
 - [KubeVela](https://kubevela.io/)：基于 OAM 模型构建的 PaaS 平台
-- [服务目录 Service Catalog](https://kubernetes.io/zh/docs/concepts/extend-kubernetes/service-catalog/)：服务目录（Service Catalog），为部署在 K8s 之上的应用提供使用 K8s 外部服务的能力，提供了 Service Broker、Serivce Binding 等概念，其中 Service Broker 遵循 Open Service Broker 标准
+- [服务目录 Service Catalog](https://kubernetes.io/zh/docs/concepts/extend-kubernetes/service-catalog/)：服务目录（Service Catalog），为部署在 K8s 之上的应用提供使用 K8s 外部服务的能力，提供了 Service Broker、Serivce Binding 等概念，其中 Service Broker 遵循 Open Service Broker 标准。服务目录可以检索、供应、和绑定由 服务代理人（Service Brokers） 提供的外部托管服务（Managed Services）。
 - [Open Service Broker](https://www.openservicebrokerapi.org/)：开放服务代理 API（Open Service Broker），为 Service Broker 构建了标准的 API。Service Broker 为服务的创建、销毁、管理等全生命周期构建了一套规范，方便服务提供商之外的平台使用服务，可以简单理解为服务代理构建了一套标准协议。Service Broker 并不是云原生提出的概念，它源自于Pivotal公司在2011年开源的PaaS(Platform-as-a-Service)项目Cloud Foundry。Service Broker 也并不一定运行在 K8s 上
 
 ## 模板引擎
