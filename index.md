@@ -76,3 +76,7 @@
 ### 视屏
 - [Open Broadcaster Software-OBS](https://obsproject.com/)：好用的推流、录屏软件
 - [Final Cut Pro](https://www.apple.com/final-cut-pro/)：专业的视频剪辑软件
+
+## 产品
+### DevOps领域
+- [优维科技官网-DevOps专家-EasyOps-应用CMDB-自动化运维-持续交付](https://www.uwintech.cn/)
