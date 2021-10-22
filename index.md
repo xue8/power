@@ -13,7 +13,7 @@
 - [云原生](#---)
   * [开发环境](#----)
   * [开放标准](#----)
-    + [[开放容器标准OCI](https://opencontainers.org/)](#-------oci--https---opencontainersorg--)
+    + [开放容器标准OCI](https://opencontainers.org/)
       - [镜像标准](#----)
       - [运行时标准](#-----)
 - [模板引擎](#----)
