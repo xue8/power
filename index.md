@@ -48,8 +48,24 @@
 - [gitpod-io/gitpod](https://github.com/gitpod-io/gitpod)：Gitpod 是一个基于 Chorom Cloud 平台的在线 IDE，它可以快速的启动一个基于大多数流行语言的开发环境，并且可以很顺畅的进行开发
 - [OAM](https://oam.dev/)：开放应用模型定义（ Open Application Model Specification），为构建于云原生之上的应用构建了一套规范
 - [KubeVela](https://kubevela.io/)：基于 OAM 模型构建的 PaaS 平台
-- [服务目录 Service Catalog](https://kubernetes.io/zh/docs/concepts/extend-kubernetes/service-catalog/)：服务目录（Service Catalog），为部署在 K8s 之上的应用提供使用 K8s 外部服务的能力，提供了 Service Broker、Serivce Binding 等概念，其中 Service Broker 遵循 Open Service Broker 标准。服务目录可以检索、供应、和绑定由 服务代理人（Service Brokers） 提供的外部托管服务（Managed Services）。
+- [服务目录 Service Catalog](https://kubernetes.io/zh/docs/concepts/extend-kubernetes/service-catalog/)：服务目录（Service Catalog），为部署在 K8s 之上的应用提供使用 K8s 外部服务的能力，提供了 Service Broker、Serivce Binding 等概念，其中 Service Broker 遵循 Open Service Broker 标准。服务目录可以检索、供应、和绑定由 服务代理人（Service Brokers） 提供的外部托管服务（Managed Services）
 - [Open Service Broker](https://www.openservicebrokerapi.org/)：开放服务代理 API（Open Service Broker），为 Service Broker 构建了标准的 API。Service Broker 为服务的创建、销毁、管理等全生命周期构建了一套规范，方便服务提供商之外的平台使用服务，可以简单理解为服务代理构建了一套标准协议。Service Broker 并不是云原生提出的概念，它源自于Pivotal公司在2011年开源的PaaS(Platform-as-a-Service)项目Cloud Foundry。Service Broker 也并不一定运行在 K8s 上
+
+### 开放标准
+#### [开放容器标准OCI](https://opencontainers.org/)
+##### 镜像标准
+标准：
+- [镜像标准image-spec](https://github.com/opencontainers/image-spec)：定义了镜像的标准，让标准镜像能够在不同的容器软件中打包、上传和下载
+
+实现：
+- moby/buildkit：从 docker build 拆分出来的项目，支持自动 GC，多种输入和输出格式，并发依赖解析，分布式 Worker 和 Rootless 执行等特性
+- genuinetools/img：对 buildkit 的一层封装，单独的二进制，没有 daemon，支持 Rootless 执行，会自动创建 SUBUID，比 buildkit 使用起来更加容易
+- uber/makisu：uber 开源的内部镜像构建工具，目标是在 Mesos 或 Kubernetes 上进行 Rootless 构建，支持的 Dockerfile 有些许不兼容，在非容器环境下运行会有问题，比如 Image failed to build without modifyfs
+- GoogleContainerTools/kaniko：Google 出品，目标是 Daemon free build on Kubernetes，要求运行镜像 gcr.io/kaniko-project/executor 进行构建，直接在别的镜像中使用二进制可能会不工作，很蠢
+- containers/buildah：开源组织 Containers 推出的项目，目标是构建 OCI 容器镜像，Daemon free，支持 Rootless 构建
+
+##### 运行时标准
+
 
 ## 模板引擎
 - [jinja2](http://docs.jinkan.org/docs/jinja2/)：功能强大的模板引擎
