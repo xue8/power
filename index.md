@@ -1,4 +1,38 @@
+- [生产力](#---)
+- [全文检索](#----)
+- [api](#api)
+  * [openapi](#openapi)
+- [Golang](#golang)
+  * [数据结构](#----)
+  * [测试](#--)
+- [可观测性](#----)
+  * [协议](#--)
+  * [tracing](#tracing)
+  * [metric](#metric)
+  * [log](#log)
+- [云原生](#---)
+  * [开发环境](#----)
+  * [开放标准](#----)
+    + [[开放容器标准OCI](https://opencontainers.org/)](#-------oci--https---opencontainersorg--)
+      - [镜像标准](#----)
+      - [运行时标准](#-----)
+- [模板引擎](#----)
+- [翻译工具](#----)
+- [业务洞察](#----)
+  * [行业数据](#----)
+    + [互联网](#---)
+- [微信行业解决方案](#--------)
+  * [微信公众号](#-----)
+- [音视频工具](#-----)
+  * [视屏](#--)
+- [产品](#--)
+  * [DevOps领域](#devops--)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
 ## 生产力
+- [Generate TOC Table of Contents from GitHub Markdown or Wiki Online](https://ecotrust-canada.github.io/markdown-toc/)：markdown toc 生成器
 
 ## 全文检索
 - [bleve](https://github.com/blevesearch/bleve)：单机版全文检索
@@ -65,6 +99,13 @@
 - containers/buildah：开源组织 Containers 推出的项目，目标是构建 OCI 容器镜像，Daemon free，支持 Rootless 构建
 
 ##### 运行时标准
+标准：
+- [容器运行时标准runtime-spec](https://github.com/opencontainers/runtime-spec)：runtime 规范中介绍了如何运行解压缩到磁盘上的 Filesystem Bundle。在 OCI 标准下，运行一个容器的过程就是下载一个 OCI 的镜像，将其解压到某个 Filesystem Bundle 中，然后某个 OCI Runtime 就会运行这个 Bundle
+
+实现：
+- opencontainers/runc：前面已经提到过很多次了，是 OCI Runtime 的参考实现。
+- kata-containers/runtime：容器标准反攻虚拟机，前身是 clearcontainers/runtime 与 hyperhq/runv，通过 virtcontainers 提供高性能 OCI 标准兼容的硬件虚拟化容器，Linux Only，且需要特定硬件。
+- google/gvisor：gVisor 是一个 Go 实现的用户态内核，包含了一个 OCI 兼容的 Runtime 实现，目标是提供一个可运行非受信代码的容器运行时沙盒，目前是 Linux Only，其他架构可能会支持。
 
 
 ## 模板引擎
